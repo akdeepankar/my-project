@@ -4,8 +4,6 @@ import { data } from "./content";
 import { useState } from 'react';
 
 
-
-
 function App() {
 
   const [index, setIndex] = useState(0);
@@ -81,8 +79,7 @@ function App() {
                   <Button color="primary" auto>
                     Sign Up Now
                   </Button>
-                  </div>
-                
+                  </div> 
             </div>
             </Card.Body>
             </Card>
@@ -96,7 +93,7 @@ function App() {
         </section>
 
         <section>
-        <h1 className='md:pt-32 pb-5 text-4xl text-center font-bold'>Features Like Never Before...</h1>
+        <h1 className='md:pt-32 pt-24 pb-5 md:text-4xl text-2xl text-center font-bold'>Features Like Never Before...</h1>
         </section>
 
         <section className=" flex justify-center">
