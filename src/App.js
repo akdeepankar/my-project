@@ -31,8 +31,12 @@ function App() {
   return (
     <div className="App">
       <main className=' md:pl-40 md:pr-40 bg-white px-5 pt-5 pb-5' style={{ backgroundImage:`url(${'https://nextui.org/gradient-left-dark.svg'})`, backgroundPosition: '-100px'  }}>
-        <section className="pt-10 bg-yellow-300">
+        <section className="pt-10 bg-yellow-300 flex justify-between">
           <h1 className='md:text-6xl text-4xl font-bold'>MySpace.</h1>
+          <div className="p-2"><Button shadow color="success" auto>
+          Download
+        </Button></div>
+          
         </section>
 
         <section className='md:flex pt-5 justify-evenly '>
@@ -82,21 +86,21 @@ function App() {
             </div>
             </Card.Body>
             </Card>
-            
-
-
           </div>
-
 
           <div>
-             
                  <div className='h-60 w-80 pt-5'>
                   <img src="pic1.png" alt=""></img>
-            </div>
-        
-          </div>
-  
-          
+            </div>   
+          </div>   
+        </section>
+
+        <section>
+        <h1 className='md:pt-32 pb-5 text-4xl text-center font-bold'>Features Like Never Before...</h1>
+        </section>
+
+        <section className=" flex justify-center">
+          <img className="rounded-xl" src="pic4.avif" alt=""></img>
         </section>
 
         <section className='md:flex pt-10 justify-evenly'>
@@ -135,7 +139,7 @@ function App() {
             <div className="pt-10 justify-center">
               <h1 className='text-4xl text-center font-bold'>Privacy at Its Peak.</h1>
               <div className="md:pl-10 pt-10 flex justify-evenly pb-5">
-                <Tooltip placement="top" content="Developers love Next.js">
+                <Tooltip placement="top" content="Secret No.1">
                   <Avatar
                     pointer
                     size="lg"
@@ -145,7 +149,7 @@ function App() {
                     squared
                   />
                 </Tooltip>
-                <Tooltip placement="top" content="Developers love Next.js">
+                <Tooltip placement="top" content="Secret No.1">
                   <Avatar
                     pointer
                     size="lg"
@@ -155,7 +159,7 @@ function App() {
                     squared
                   />
                 </Tooltip>
-                <Tooltip placement="top" content="Developers love Next.js">
+                <Tooltip placement="top" content="Developers love React">
                   <Avatar
                     pointer
                     size="lg"
