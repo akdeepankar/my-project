@@ -1,6 +1,5 @@
-import { Avatar, Card, Grid, Button, Image, Tooltip, Spacer } from "@nextui-org/react";
-import { a, features } from "./content";
-import { data } from "./content";
+import { Avatar, Card, Grid, Button, Image, Tooltip, Spacer, Text } from "@nextui-org/react";
+import { a, features, tooltip, data, icons, testimonial } from "./content";
 import { useState } from 'react';
 
 
@@ -48,31 +47,22 @@ function App() {
                  <Card.Body>
                  <div className=''>
                     <Grid.Container gap={1}>
-                            <Grid>
+
+                      {icons.map(i => {
+                        return (
+                          <>
+                          <Grid>
                               <Avatar
                                 size="lg"
-                                src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-                                color="primary"
+                                src={i.src}
+                                color={i.color}
                                 bordered
                               />
                             </Grid>
-                            <Grid>
-                              <Avatar
-                                size="lg"
-                                src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
-                                color="secondary"
-                                bordered
-                              />
-                            </Grid>
-                            <Grid>
-                              <Avatar
-                                size="lg"
-                                src="https://i.pravatar.cc/150?u=a04258114e29026702d"
-                                color="success"
-                                bordered
-                              />
-                            </Grid>
-                      </Grid.Container>
+                          </>
+                        )
+                      })}
+                    </Grid.Container>
                   <div className='w-82'>
                   <h1 className='md:text-2xl font-bold'>Write with Thousands Others on MySpace.</h1>
                   </div>
@@ -93,11 +83,11 @@ function App() {
           </div>   
         </section>
 
-        <section>
+        <section className=" md:pt-10">
         <h1 className='md:pt-32 pt-24 pb-5 md:text-4xl text-2xl text-center font-bold'>Features Like Never Before...</h1>
         </section>
 
-        <section className="flex overflow-x-auto md:justify-center">
+        <section className="flex overflow-x-auto md:justify-center md:pt-10">
           {features.map( i => {
             return (
               <>
@@ -141,52 +131,77 @@ function App() {
         </section>
 
   
-        <section className="pb-5">
+        <section className="pb-5 md:pt-40 md:pb-40">
             <div className="pt-10 justify-center">
-              <h1 className='text-4xl text-center font-bold'>Privacy at Its Peak.</h1>
               <div className="md:pl-10 pt-10 flex justify-evenly pb-5">
-                <Tooltip placement="top" content="Secret No.1">
-                  <Avatar
-                    pointer
-                    size="lg"
-                    src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
-                    color="gradient"
-                    bordered
-                    squared
-                  />
-                </Tooltip>
-                <Tooltip placement="top" content="Secret No.1">
-                  <Avatar
-                    pointer
-                    size="lg"
-                    src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
-                    color="gradient"
-                    bordered
-                    squared
-                  />
-                </Tooltip>
-                <Tooltip placement="top" content="Developers love React">
-                  <Avatar
-                    pointer
-                    size="lg"
-                    src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
-                    color="gradient"
-                    bordered
-                    squared
-                  />
-                </Tooltip>
-                
+                {tooltip.map(i => {
+                  return (
+                    <>
+                          <Tooltip placement="top" content={i.content}>
+                          <Avatar
+                            pointer
+                            size="lg"
+                            src={i.src}
+                            color="gradient"
+                            bordered
+                            squared
+                          />
+                          </Tooltip>
+                    </>
+                  )
+                })}          
               </div>
-              <h1 className="text-center text-l font-semibold pt-2 ">Hey. Hover over us for Secrets.</h1>
+              <h1 className="text-center text-l font-semibold md:pt-10 ">Hey. Hover over us for Secrets.</h1>
+              <h1 className='text-4xl text-center font-bold'>Privacy at Its Peak.</h1>
             </div>
         </section>
-
-        <section>
+       
+        
+        <section className="md:pt-5 md:pb-20">
           <img className="rounded-xl" src="banner.png" alt=""></img>
         </section>
 
         <section>
-        <h1 className='text-4xl text-center font-bold pt-5'>Don't Wait Download Now!</h1>
+        <Text className='text-4xl text-center font-bold pt-5'>Testimonials</Text>
+        <div className="pt-5 md:flex">
+          {testimonial.map(i => {
+            return (
+              <>
+          <Card css={{ p: "$6", mw: "400px" }}>
+          <Card.Header>
+          <img
+            alt="logo"
+            src={i.logo}
+            width="34px"
+            height="34px"
+            className="rounded-2xl"
+          />
+          <Grid.Container css={{ pl: "$6" }}>
+          <Grid xs={12}>
+            <Text h4 css={{ lineHeight: "$xs" }}>
+              {i.name}
+            </Text>
+          </Grid>
+          <Grid xs={12}>
+            <Text css={{ color: "$accents8" }}>{i.city}</Text>
+          </Grid>
+          </Grid.Container>
+          </Card.Header>
+          <Card.Body css={{ py: "$2" }}>
+          <Text>
+           {i.review}
+          </Text>
+          </Card.Body>
+          </Card>
+          <Spacer/>
+          </>
+            )
+          })}
+        </div>
+        </section>
+
+        <section>
+        <h1 className='text-4xl text-center font-bold md:pt-20 pt-10'>Don't Wait Download Now!</h1>
 
         <div className='flex justify-between pl-2 pt-2'>
 

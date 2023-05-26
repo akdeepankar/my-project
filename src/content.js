@@ -1,3 +1,19 @@
+export const icons = [
+    {
+        src: 'https://i.pravatar.cc/150?u=a042581f4e29026024d',
+        color: 'primary',
+    },
+    {
+        src: 'https://i.pravatar.cc/150?u=a042581f4e25056704b',
+        color: 'secondary',
+    },
+    {
+        src: 'https://i.pravatar.cc/150?u=a048581f4e29026701d',
+        color: 'warning',
+    },
+    
+]
+
 export const data = [
     {
         heading: 'Write Notes',
@@ -19,3 +35,42 @@ export const data = [
 export const a = ['pic3.png', 'pic1.png', 'pic2.png'];
 
 export const features = ['slide1.png','slide2.png','slide3.png','slide4.png'];
+
+export const tooltip = [
+    {
+        src: 'https://i.pravatar.cc/150?u=a042581f4e29026024d',
+        content: ' Your Data is Safe. ',
+    },
+    {
+        src: 'https://i.pravatar.cc/150?u=a042581f4e25056704b',
+        content: ' End to End Encrypted. ',
+    },
+    {
+        src: 'https://i.pravatar.cc/150?u=a048581f4e29026701d',
+        content: ' No Lagging ',
+    },
+    
+]
+
+export const testimonial = [
+    {
+        logo: 'https://i.pravatar.cc/150?u=a042581f4e29026024d',
+        name: ' Shubham ',
+        city: 'New Delhi',
+        review: 'Great App to collect all your Notes.'
+    },
+    {
+        logo: 'https://i.pravatar.cc/150?u=a048581f4e29026701d',
+        name: 'Pranav',
+        city: 'Bengaluru',
+        review: 'Must Download this App.'
+    },
+    {
+        logo: 'https://i.pravatar.cc/150?u=a042581f4e25056704b',
+        name: ' Aakash ',
+        city: 'Mumbai',
+        review: 'Ten on Ten Experience. Good way to collect and Share Notes'
+    },
+   
+    
+]
