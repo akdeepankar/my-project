@@ -1,4 +1,4 @@
-import { Avatar, Card, Grid, Button, Image, Tooltip } from "@nextui-org/react";
+import { Avatar, Card, Grid, Button, Image, Tooltip, Spacer } from "@nextui-org/react";
 import { a } from "./content";
 import { data } from "./content";
 import { useState } from 'react';
@@ -31,10 +31,10 @@ function App() {
       <main className=' md:pl-40 md:pr-40 bg-white px-5 pt-5 pb-5' style={{ backgroundImage:`url(${'https://nextui.org/gradient-left-dark.svg'})`, backgroundPosition: '-100px'  }}>
         <section className="pt-10 bg-yellow-300 flex justify-between">
           <h1 className='md:text-6xl text-4xl font-bold'>MySpace.</h1>
-          <div className="p-2"><Button shadow color="success" auto>
+          <div className="p-2">
+        <Button shadow color="success" auto>
           Download
-        </Button></div>
-          
+        </Button></div>     
         </section>
 
         <section className='md:flex pt-5 justify-evenly '>
@@ -96,8 +96,15 @@ function App() {
         <h1 className='md:pt-32 pt-24 pb-5 md:text-4xl text-2xl text-center font-bold'>Features Like Never Before...</h1>
         </section>
 
-        <section className=" flex justify-center">
-          <img className="rounded-xl" src="pic4.avif" alt=""></img>
+        <section className="flex overflow-x-auto md:justify-center">
+          <img className="rounded-xl h-44 " src="pic4.avif" alt=""></img>
+          <Spacer y={1} />
+          <img className="rounded-xl h-44" src="pic4.avif" alt=""></img>
+          <Spacer y={1} />
+          <img className="rounded-xl h-44" src="pic4.avif" alt=""></img>
+          <Spacer y={1} />
+          <img className="rounded-xl h-44" src="pic4.avif" alt=""></img>
+          
         </section>
 
         <section className='md:flex pt-10 justify-evenly'>
