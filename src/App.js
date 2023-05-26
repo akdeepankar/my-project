@@ -31,10 +31,9 @@ function App() {
       <main className=' md:pl-40 md:pr-40 bg-white px-5 pt-5 pb-5' style={{ backgroundImage:`url(${'https://nextui.org/gradient-left-dark.svg'})`, backgroundPosition: '-100px'  }}>
         <section className="pt-10 bg-yellow-300 flex justify-between">
           <h1 className='md:text-6xl text-4xl font-bold'>MySpace.</h1>
-          <div className="p-2">
-        <Button shadow color="success" auto>
-          Download
-        </Button></div>     
+          <div className="pt-8 pr-5 font-mono font-semibold">
+          <h1>Your Daily App.</h1>
+          </div>     
         </section>
 
         <section className='md:flex pt-5 justify-evenly '>
@@ -76,8 +75,8 @@ function App() {
                   <h1 className='md:text-2xl font-bold'>Write with Thousands Others on MySpace.</h1>
                   </div>
                   <div className='pt-2'>
-                  <Button color="primary" auto>
-                    Sign Up Now
+                  <Button color="success" auto>
+                    Downlod Now
                   </Button>
                   </div> 
             </div>
