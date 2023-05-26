@@ -33,7 +33,7 @@ function App() {
           <div>
           <h1 className='md:text-6xl text-4xl font-bold'>MySpace.</h1>
           </div>
-          <div className="md:pt-8 md:pr-5 pr-2 font-mono font-semibold">
+          <div className="md:pt-8 md:pr-5 pr-2 pt-3 font-mono font-semibold">
           <h1>Your Daily App.</h1>
           </div>     
         </section>
