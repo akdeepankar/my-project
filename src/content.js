@@ -17,3 +17,5 @@ export const data = [
 ]
 
 export const a = ['pic3.png', 'pic1.png', 'pic2.png'];
+
+export const features = ['slide1.png','slide2.png','slide3.png','slide4.png'];

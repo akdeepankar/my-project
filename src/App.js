@@ -1,5 +1,5 @@
 import { Avatar, Card, Grid, Button, Image, Tooltip, Spacer } from "@nextui-org/react";
-import { a } from "./content";
+import { a, features } from "./content";
 import { data } from "./content";
 import { useState } from 'react';
 
@@ -97,13 +97,14 @@ function App() {
         </section>
 
         <section className="flex overflow-x-auto md:justify-center">
-          <img className="rounded-xl h-44 " src="pic4.avif" alt=""></img>
-          <Spacer y={1} />
-          <img className="rounded-xl h-44" src="pic4.avif" alt=""></img>
-          <Spacer y={1} />
-          <img className="rounded-xl h-44" src="pic4.avif" alt=""></img>
-          <Spacer y={1} />
-          <img className="rounded-xl h-44" src="pic4.avif" alt=""></img>
+          {features.map( i => {
+            return (
+              <>
+              <img className="rounded-xl h-44 " src={i} alt=""></img>
+              <Spacer y={1} />  
+              </>
+            )
+          })}
           
         </section>
 
