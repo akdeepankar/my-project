@@ -179,7 +179,10 @@ function App() {
               </div>
               <h1 className="text-center text-l font-semibold pt-2 ">Hey. Hover over us for Secrets.</h1>
             </div>
+        </section>
 
+        <section>
+          <img className="rounded-xl" src="banner.png" alt=""></img>
         </section>
 
         <section>
